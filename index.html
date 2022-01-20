@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency</title>
+</head>
+<body class="genel">            
+        <div id="container">
+            <section id="form_container">
+                <header id="header">
+                    <h1>CURRENCY CONVENTER</h1>
+                    <br>
+                </header>
+        <form action="result.html">
+            <div class="box" >
+                <label for="amount2" id="amount">Amount</label>
+                <label for="money1" id="from">From</label>
+                <label for="money2" id="to">To</label>
+                <br>
+            </div>
+            <div class="box">
+                <input type="number" name="amount2" value="money" id="amount2" placeholder="Tutarı yazınız....">
+                <select name="money1" id="money1">
+                    <option value="usd">$USD / Dollar</option>
+                    <option value="euro">€EURO / Euro</option>
+                    <option value="sterlin">£STERLIN / Sterlin</option>
+                </select>
+                <select name="money2" id="money2">
+                    <option>TL / Türk Lirası</option>
+                </select>
+            </div>
+            <div class="box1">
+                <br>
+                <label for="total" id="total_label">TOTAL</label>
+                <br> <br>
+                <input type="text" id="total" name="total" placeholder="Toplam tutar = ....">
+            </div>
+            <input type="button"  id="deger" value="TOPLAM">
+            <br><br>
+            <div class="music">
+                <label for="musicc" id="music">MUSIC</label>
+                <br>
+                <audio controls  id="music_button"  autoplay >
+                    <source src="./musics/Yiruma River Flows In You-31.9-71.5.mp3" type="" >   
+                </audio>
+                
+            </div>            
+            <script>
+                var btn_Topla=document.getElementById("deger");
+                
+                btn_Topla.onclick=function(){
+                    var girilenPara=Number(document.getElementById("amount2").value);
+                    var paraBirimi = document.getElementById("money1")
+                    var ilkPara = paraBirimi.options[paraBirimi.selectedIndex].value
+                    if (ilkPara == "usd" ) {
+                        var sonuc = girilenPara*13.35 + "TL"; 
+                        document.getElementById("total").value = " Sonuç :   " +  sonuc; 
+                       
+                    } else if (ilkPara == "euro" ){
+                        var sonuc = girilenPara*15.15 + "TL";
+                        document.getElementById("total").value = " Sonuç :   " +  sonuc; 
+                       
+                    } else {
+                        var sonuc = girilenPara*18.20 + "TL";
+                        document.getElementById("total").value = " Sonuç :   " +  sonuc; 
+                       
+                    }
+                
+                window.alert(" 1 USD = 13.35TL     1 Euro = 15,15TL    1 Sterlin = 18,20TL  Olarak hesaplar yapılacaktır. ( Acemiliğimiz için özür dileriz :D )");
+             }
+            </script>
+        </form>
+    </section>
+    </div>
+    
+    <p id="by"> BY MUSTAFA</p>
+</body>
+
+</html>

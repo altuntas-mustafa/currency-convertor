@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgba(50, 100, 150, 0.9);
+}
+.genel{
+    padding-top: 1rem;
+    background-color: snow;
+}
+#container {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 8rem;
+    padding-top: 3rem;
+    background-image: url(./images/para.jfif);
+}
+#form_container {
+    width: 70%;
+    margin-left: 10rem;
+    padding-bottom: 3rem;
+    color: black;
+}
+#header {
+   padding-left: 9rem;
+   padding-top: 2rem;
+   color: orange;
+   
+}
+#from {
+    padding-left: 9rem;
+}
+#to{
+    padding-left: 9rem;
+}
+
+label{
+    font-size: x-large;
+    padding-left: 4rem;
+}
+.box{
+    padding-left: 1rem;
+}
+ 
+.box1{
+    width: 50%;
+    margin: auto;
+}
+input, select {
+    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    background-color:grey;
+}
+.submit{
+    width: 50%;
+    margin: auto;
+    padding-left: 3rem;
+}
+#money2 , #money1, #amount2{
+      margin-top: 1rem;
+      padding-top: 1rem;
+  }
+#total {
+      padding-top: 1rem;
+      margin-left: 3rem;
+  }
+  #total_label {
+      padding-left: 6rem;
+  }
+#music_button {
+    width: 18%;
+    padding-left: 1rem;
+    padding: 0.1rem;
+    cursor: cell;
+}
+#music {
+    padding-left: 2rem;
+    font-size: 1.2rem;
+}
+::placeholder {
+    font-size: 15px;
+    color: darkred;
+}
+
+#deger {
+    background-color: orange;
+    width: 18%;
+    margin-top: 2rem;
+    margin-left: 15rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+}
+#by {
+    padding-top: 2rem;
+    padding-right: 3rem;
+    direction: rtl;
+    color: orange;
+}
